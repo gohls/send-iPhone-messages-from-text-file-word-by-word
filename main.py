@@ -4,7 +4,7 @@ import time
 import os
 import config
 
-FILE_PATH = 'path_to_text_file.txt'
+FILE_PATH = 'text.txt'
 SECONDS = 5
 
 
@@ -22,7 +22,7 @@ def get_words_list(file_path: str) -> list:
 
 def send_message(message: str, chatId: str) -> None:
     """Console command to run AppleScript."""
-    os.system('osascript send.scpt {msg} "{id}"'.format(
+    os.system('osascript send.scpt {msg} {id}'.format(
         msg=message, id=chatId))
 
 
