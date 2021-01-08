@@ -5,7 +5,7 @@ import os
 import config
 
 FILE_PATH = 'text.txt'
-SECONDS = 5
+SECONDS = 1
 
 
 def get_words_list(file_path: str) -> list:
